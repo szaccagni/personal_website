@@ -28,7 +28,7 @@ body {
     padding:5px;
 }
 
-.linkbar .nav {
+.linkbar .mynav {
     font-family: 'Amatic SC', cursive;
     font-size: 30px;
     border: none;
@@ -37,7 +37,7 @@ body {
     width: 25%;
 }
 
-.linkbar .nav:hover {
+.linkbar .mynav:hover {
     background-image: URL("https://raw.githubusercontent.com/szaccagni/images/main/Hover_Image_Small.png");
     background-position: center;
     background-repeat: no-repeat; 
@@ -53,18 +53,48 @@ body {
     margin-right: auto;
 }
 
-.travel_row {
-    display: flex;
-    flex-wrap: wrap;
-    padding:0;
-}
-
 .travel_img {
-    flex: 33%;
-    width: 33%;
-    position:relative;
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.travel_img tr {
+    border: 1px solid;
+    padding: 10px;
 }
 
 .travel_img img {
-    width: 100%;
+    width: 80%;
+}
+
+.travel_img .col1 {
+    width: 30%;
+}
+x
+.travel_img .col2 {
+    width: 70%;
+}
+
+.carousel {
+    display: flex;
+}
+
+.carousel-item {
+    display:none;
+}
+
+.carousel-active {
+    display: block;
+}
+
+#carousel-prev {
+    cursor: pointer;
+    margin: auto;
+}
+
+#carousel-next {
+    cursor: pointer;
+    margin: auto;
 }
