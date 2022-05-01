@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Rubik:wght@300&display=swap');
+
+body {
+    padding: 10px;
+}
+
+#title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    text-align: center;
+    margin: 20px;
+}
+
+#goldline {
+    content: URL("https://raw.githubusercontent.com/szaccagni/images/main/Divider2_Small.png");
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linkbar {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    width:90%;
+    padding:5px;
+}
+
+.linkbar .nav {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    border: none;
+    border-radius: 12px;
+    padding:10px;
+    width: 25%;
+}
+
+.linkbar .nav:hover {
+    background-image: URL("https://raw.githubusercontent.com/szaccagni/images/main/Hover_Image_Small.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    cursor: pointer;
+}
+
+.aboutme {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding: 30px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.travel_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding:0;
+}
+
+.travel_img {
+    flex: 33%;
+    width: 33%;
+    position:relative;
+}
+
+.travel_img img {
+    width: 100%;
+}
+
+.travel_img:hover .travel_overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.travel_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .7s ease;
+    background-image: URL("https://raw.githubusercontent.com/szaccagni/images/main/Image_Doodle2.png");
+    /* background-color: #A7C7E7; */
+    vertical-align: middle;
+    margin:10px;
+}
+
+.travel_text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    font-size: 20px;
+}
