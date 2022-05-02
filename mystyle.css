@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Pompiere&family=Rubik:wght@300&display=swap');
 
 body {
     padding: 10px;
@@ -53,32 +53,39 @@ body {
     margin-right: auto;
 }
 
-.travel_img {
-
+.travel_img_entire {
+    background-color: rgba(192,192,192,.26);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-.travel_img tr {
-    border: 1px solid;
-    padding: 10px;
+    margin-top: 20px;
 }
 
-.travel_img img {
-    width: 80%;
-}
-
-.travel_img .col1 {
-    width: 30%;
-}
-x
-.travel_img .col2 {
+.travel_img_entire img {
     width: 70%;
 }
 
 .carousel {
     display: flex;
+}
+
+.carousel-prev {
+    cursor: pointer;
+    margin: auto;
+    margin-right:0;
+    width: 30px;
+    content: URL( "https://raw.githubusercontent.com/szaccagni/images/main/previous.png");
+}
+
+.carousel-prev:hover {
+    content:URL("https://raw.githubusercontent.com/szaccagni/images/main/previous_hover2.png")
+}
+
+.carousel_img_container {
+    margin-top:15px;
+    margin-bottom: 15px;
+    width:75%;
 }
 
 .carousel-item {
@@ -89,12 +96,22 @@ x
     display: block;
 }
 
-#carousel-prev {
+.carousel-next {
     cursor: pointer;
     margin: auto;
+    margin-left:0;
+    width: 30px;
+    content: URL('https://raw.githubusercontent.com/szaccagni/images/main/nextw.png');
 }
 
-#carousel-next {
-    cursor: pointer;
-    margin: auto;
+.carousel-next:hover {
+    content: URL('https://raw.githubusercontent.com/szaccagni/images/main/next_hover2.png');
+}
+
+.travel_caption {
+    font-family: 'Pompiere', cursive;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 220px;
+    padding-bottom: 15px;
 }
