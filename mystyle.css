@@ -54,6 +54,7 @@ body {
 }
 
 .travel_img_entire {
+    font-family: 'Amatic SC', cursive;
     background-color: rgba(192,192,192,.26);
     width: 80%;
     margin-left: auto;
@@ -74,12 +75,15 @@ body {
     cursor: pointer;
     margin: auto;
     margin-right:0;
-    width: 30px;
-    content: URL( "https://raw.githubusercontent.com/szaccagni/images/main/previous.png");
+    /* width: 30px;
+    content: URL( "https://raw.githubusercontent.com/szaccagni/images/main/previous.png"); */
+    width: 60px;
+    content: URL('https://raw.githubusercontent.com/szaccagni/images/main/previous_arrow.png');
 }
 
 .carousel-prev:hover {
-    content:URL("https://raw.githubusercontent.com/szaccagni/images/main/previous_hover2.png")
+    /* content:URL("https://raw.githubusercontent.com/szaccagni/images/main/previous_hover2.png") */
+    content: URL('https://raw.githubusercontent.com/szaccagni/images/main/previous_arrow_hover.png');
 }
 
 .carousel_img_container {
@@ -100,18 +104,30 @@ body {
     cursor: pointer;
     margin: auto;
     margin-left:0;
-    width: 30px;
-    content: URL('https://raw.githubusercontent.com/szaccagni/images/main/nextw.png');
+    /* width: 30px; */
+    /* content: URL('https://raw.githubusercontent.com/szaccagni/images/main/nextw.png'); */
+    width: 60px;
+    content: URL('https://github.com/szaccagni/images/blob/main/next_arrow.png?raw=true');
 }
 
 .carousel-next:hover {
-    content: URL('https://raw.githubusercontent.com/szaccagni/images/main/next_hover2.png');
+    /* content: URL('https://raw.githubusercontent.com/szaccagni/images/main/next_hover2.png'); */
+    content: URL('https://raw.githubusercontent.com/szaccagni/images/main/next_arrow_hover.png');
 }
 
 .travel_caption {
-    font-family: 'Pompiere', cursive;
     font-size: 25px;
     text-align: right;
     margin-right: 220px;
     padding-bottom: 15px;
+}
+
+.art_entire {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.art_entire img{
+    width: 70%;
 }
