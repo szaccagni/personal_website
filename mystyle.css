@@ -44,13 +44,34 @@ body {
     cursor: pointer;
 }
 
-.aboutme {
-    font-family: 'Rubik', sans-serif;
-    text-align: center;
-    padding: 30px;
-    width: 40%;
+.me {
+    display: flex;
+    background-color: rgba(192,192,192,.26);
+    margin: 20px;
+    margin-top:50px;
     margin-left: auto;
     margin-right: auto;
+    width: 60%;}
+
+.aboutme {
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    padding: 30px 20px 30px 55px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.me img {
+    width:30%;
+    padding: 30px 55px 30px 20px;
+}
+
+
+.aboutme .contact {
+    position: absolute;
+    bottom:30px;
 }
 
 .travel_img_entire {
