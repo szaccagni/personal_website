@@ -62,7 +62,7 @@ body {
     margin-right: auto;
 }
 
-.me img {
+#me_img {
     width:30%;
     padding: 30px 55px 30px 20px;
 }
@@ -70,7 +70,6 @@ body {
 .me_img_small {
     display: none;
 }
-
 
 .aboutme .contact {
     bottom:30px;
@@ -98,14 +97,11 @@ body {
     cursor: pointer;
     margin: auto;
     margin-right:0;
-    /* width: 30px;
-    content: URL( "https://raw.githubusercontent.com/szaccagni/images/main/previous.png"); */
     width: 60px;
     content: URL('https://raw.githubusercontent.com/szaccagni/images/main/previous_arrow.png');
 }
 
 .carousel-prev:hover {
-    /* content:URL("https://raw.githubusercontent.com/szaccagni/images/main/previous_hover2.png") */
     content: URL('https://raw.githubusercontent.com/szaccagni/images/main/previous_arrow_hover.png');
 }
 
@@ -127,14 +123,11 @@ body {
     cursor: pointer;
     margin: auto;
     margin-left:0;
-    /* width: 30px; */
-    /* content: URL('https://raw.githubusercontent.com/szaccagni/images/main/nextw.png'); */
     width: 60px;
     content: URL('https://github.com/szaccagni/images/blob/main/next_arrow.png?raw=true');
 }
 
 .carousel-next:hover {
-    /* content: URL('https://raw.githubusercontent.com/szaccagni/images/main/next_hover2.png'); */
     content: URL('https://raw.githubusercontent.com/szaccagni/images/main/next_arrow_hover.png');
 }
 
@@ -158,13 +151,18 @@ body {
 @media only screen and (max-width: 1100px) {
     .me {
         display: block;
-        width: 80%;
     }
-    .me img {
+    #me_img {
         display:none;
     }
     .me_img_small {
         display: block;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .me_img_small img {
+        width: 40%;
     }
 
   }
