@@ -225,10 +225,6 @@ body {
         margin:0 3rem;
         font-size:larger;
     }
-    .linkbar {
-        margin:0;
-        width:100%;
-    }
     .carousel-prev {
         width: 3rem;
     }
@@ -274,5 +270,3 @@ body {
         font-size: 6px;
     }
 }
-
-
