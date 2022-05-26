@@ -208,14 +208,15 @@ body {
     body {
         padding:0;
     }
-
+    .linkbar .mynav:hover {
+        background-image: none;
+    }
     .me {
         margin:1.5rem;
         width:100%;
         margin-left: 0;
         margin-right: 0;
     }
-
     .me_img_small img {
         width: 55%;
     }
