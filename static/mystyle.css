@@ -238,6 +238,9 @@ body {
     .carousel-prev:hover {
         content: URL('https://raw.githubusercontent.com/szaccagni/images/main/previous_arrow.png');
     }
+    .resume {
+        display: none;
+    }
 }
 
 
