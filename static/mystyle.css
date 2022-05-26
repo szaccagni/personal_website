@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Pompiere&family=Rubik:wght@300&display=swap');
 
+html {
+    font-size:16px;
+}
+
 body {
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 #title {
     font-family: 'Amatic SC', cursive;
-    font-size: 70px;
+    font-size: 4.375rem;
     text-align: center;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 #goldline {
@@ -20,20 +24,17 @@ body {
 }
 
 .linkbar {
-    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    border: none;
     width:90%;
-    padding:5px;
+    padding:0.3125rem;
 }
 
 .linkbar .mynav {
     font-family: 'Amatic SC', cursive;
-    font-size: 30px;
-    border: none;
-    border-radius: 12px;
-    padding:10px;
+    font-size: 1.875rem;
+    border-radius: 0.75rem;
+    padding:0.625rem;
     width: 25%;
 }
 
@@ -47,8 +48,7 @@ body {
 .me {
     display: flex;
     background-color: rgba(192,192,192,.26);
-    margin: 20px;
-    margin-top:50px;
+    margin-top:3.125rem;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
@@ -57,7 +57,7 @@ body {
 .aboutme {
     font-family: 'Rubik', sans-serif;
     text-align: left;
-    padding: 30px 20px 30px 55px;
+    padding: 1.875rem 1.25rem;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -65,7 +65,7 @@ body {
 
 #me_img {
     width:30%;
-    padding: 30px 55px 30px 20px;
+    padding: 1.875rem 3.4375rem 1.875rem 1.25rem;
 }
 
 .me_img_small {
@@ -73,7 +73,7 @@ body {
 }
 
 .aboutme .contact {
-    bottom:30px;
+    bottom:1.875rem;
 }
 
 .travel_img_entire {
@@ -83,7 +83,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .travel_img_entire img {
@@ -98,7 +98,7 @@ body {
     cursor: pointer;
     margin: auto;
     margin-right:0;
-    width: 60px;
+    width: 3.75rem;
     content: URL('https://raw.githubusercontent.com/szaccagni/images/main/previous_arrow.png');
 }
 
@@ -107,8 +107,8 @@ body {
 }
 
 .carousel_img_container {
-    margin-top:15px;
-    margin-bottom: 15px;
+    margin-top:1rem;
+    margin-bottom:1rem;
     width:75%;
 }
 
@@ -124,7 +124,7 @@ body {
     cursor: pointer;
     margin: auto;
     margin-left:0;
-    width: 60px;
+    width: 3.75rem;
     content: URL('https://github.com/szaccagni/images/blob/main/next_arrow.png?raw=true');
 }
 
@@ -133,10 +133,9 @@ body {
 }
 
 .travel_caption {
-    font-size: 25px;
-    text-align: right;
-    margin-right: 220px;
-    padding-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
 }
 
 .art_entire {
@@ -151,19 +150,19 @@ body {
 
 .dev_container{
     width: 80%;
-    margin: 50px auto auto auto;
+    margin: 3.125rem auto auto auto;
 }
 .dev_item {
     background-color: rgba(192,192,192,.26);
     width: 80%;
-    margin: 15px auto auto auto;
-    padding: 30px;
+    margin: 1rem auto auto auto;
+    padding: 1.875rem;
     font-family: 'Rubik', sans-serif;
 }
 
 .resume {
     height:auto;
-    margin: 50px auto auto auto;
+    margin: 3.125rem    auto auto auto;
     text-align: center;
 }
 
@@ -177,11 +176,81 @@ body {
     .me_img_small {
         display: block;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 1.875rem;
     }
 
     .me_img_small img {
         width: 40%;
     }
 
+}
+
+@media only screen and (max-width: 1100px) {
+      .me {
+        margin-top:3.125rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+      }
   }
+
+@media only screen and (max-width: 630px) {
+    .me {
+    margin:0;
+    width:100%;
+    }
+    .linkbar {
+        margin:0;
+        width:100%;
+    }
+    .carousel-prev {
+        width: 3rem;
+    }
+    .carousel-next {
+        width: 3rem;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    html {
+        font-size: 12px;
+    }
+    .aboutme {
+        padding-left:0;
+        padding-right:0;
+        margin:0 3rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    html {
+        font-size: 6px;
+    }
+    .travel_img_entire {
+        margin-right:0px;
+        margin-left:0px;
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    .title {
+        font-size: 3rem;
+    }
+    
+    .linkbar {
+        font-size: 1.3rem;
+    }
+
+    .aboutme {
+        font-size:1rem;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    html {
+        font-size: 6px;
+    }
+}
+
+
