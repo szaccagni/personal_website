@@ -35,7 +35,6 @@ body {
     font-size: 1.875rem;
     border-radius: 0.75rem;
     padding:0.625rem;
-    width: 25%;
 }
 
 .linkbar .mynav:hover {
@@ -169,6 +168,10 @@ body {
 @media only screen and (max-width: 1100px) {
     .me {
         display: block;
+        margin-top:3.125rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;  
     }
     #me_img {
         display:none;
@@ -178,26 +181,49 @@ body {
         text-align: center;
         padding-top: 1.875rem;
     }
-
     .me_img_small img {
         width: 40%;
     }
+    .art_entire img {
+        width:90%;
+    }
+    .travel_img_entire {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
+    .travel_img_entire img {
+        width: 90%;
+    }
 }
 
-@media only screen and (max-width: 1100px) {
-      .me {
-        margin-top:3.125rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-      }
-  }
 
 @media only screen and (max-width: 630px) {
+    
+    html {
+        font-size:12px
+    }
+
+    body {
+        padding:0;
+    }
+
     .me {
-    margin:0;
-    width:100%;
+        margin:1.5rem;
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .me_img_small img {
+        width: 55%;
+    }
+    .aboutme {
+        padding-left:0;
+        padding-right:0;
+        margin:0 3rem;
+        font-size:larger;
     }
     .linkbar {
         margin:0;
@@ -209,18 +235,14 @@ body {
     .carousel-next {
         width: 3rem;
     }
+    .carousel-next:hover {
+        content: URL('https://github.com/szaccagni/images/blob/main/next_arrow.png?raw=true');  
+    }
+    .carousel-prev:hover {
+        content: URL('https://raw.githubusercontent.com/szaccagni/images/main/previous_arrow.png');
+    }
 }
 
-@media only screen and (max-width: 465px) {
-    html {
-        font-size: 12px;
-    }
-    .aboutme {
-        padding-left:0;
-        padding-right:0;
-        margin:0 3rem;
-    }
-}
 
 @media only screen and (max-width: 360px) {
     html {
