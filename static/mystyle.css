@@ -1,282 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Pompiere&family=Rubik:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+}
 
-html {
-    font-size:16px;
+HTML, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 16px;
+    --bg-color:rgb(66, 81, 44);
+    background-color : var(--bg-color);
 }
 
 body {
-    padding: 0.625rem;
-}
-
-#title {
-    font-family: 'Amatic SC', cursive;
-    font-size: 4.375rem;
-    text-align: center;
-    margin: 1.25rem;
-}
-
-#goldline {
-    content: URL("https://raw.githubusercontent.com/szaccagni/images/main/Divider2_Small.png");
-    width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.linkbar {
-    margin-left: auto;
-    margin-right: auto;
-    width:90%;
-    padding:0.3125rem;
-}
-
-.linkbar .mynav {
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.875rem;
-    border-radius: 0.75rem;
-    padding:0.625rem;
-}
-
-.linkbar .mynav:hover {
-    background-image: URL("https://raw.githubusercontent.com/szaccagni/images/main/Hover_Image_Small.png");
-    background-position: center;
-    background-repeat: no-repeat; 
-    cursor: pointer;
-}
-
-.mobile {
-    display: none;
-}
-
-.me {
+    min-height: 100vh;
     display: flex;
-    background-color: rgba(192,192,192,.26);
-    margin-top:3.125rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+    flex-direction: column;
 }
 
-.aboutme {
-    font-family: 'Rubik', sans-serif;
-    text-align: left;
-    padding: 1.875rem 1.25rem;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+footer {
+    margin-top: auto;
+    min-height: 3vw;
 }
 
-#me_img {
-    width:30%;
-    padding: 1.875rem 3.4375rem 1.875rem 1.25rem;
-}
+/* mobile header */
 
-.me_img_small {
+.header-mobile {
     display: none;
+    width: 100%;
 }
 
-.aboutme .contact {
-    bottom:1.875rem;
-}
-
-.travel_img_entire {
-    font-family: 'Amatic SC', cursive;
-    background-color: rgba(192,192,192,.26);
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 3.125rem;
-}
-
-.travel_img_entire img {
-    width: 70%;
-}
-
-.carousel {
+.header-mobile-top {
     display: flex;
+    height: 3rem;
+    align-items: center;
 }
 
-.carousel-prev {
-    cursor: pointer;
-    margin: auto;
-    margin-right:0;
-    width: 3.75rem;
-    content: URL('https://raw.githubusercontent.com/szaccagni/images/main/previous_arrow.png');
+.header-mobile-left {
+    width: 50%;
 }
 
-.carousel-prev:hover {
-    content: URL('https://raw.githubusercontent.com/szaccagni/images/main/previous_arrow_hover.png');
+.header-mobile-right {
+    width: 50%;
+    justify-content: flex-end;
+    display: inline-flex;
 }
 
-.carousel_img_container {
-    margin-top:1rem;
-    margin-bottom:1rem;
-    width:75%;
-}
-
-.carousel-item {
+.header-mobile-bottom {
     display:none;
+    padding: 3vw 0;
+    opacity: 0;
+    transition: .6s ease opacity;
+
 }
 
-.carousel-active {
-    display: block;
+.mobile-nav-item {
+    margin:2vw;
 }
 
-.carousel-next {
+/* hamburger icon */
+.hamburger { 
+    display: inline-block;
     cursor: pointer;
-    margin: auto;
-    margin-left:0;
-    width: 3.75rem;
-    content: URL('https://github.com/szaccagni/images/blob/main/next_arrow.png?raw=true');
 }
 
-.carousel-next:hover {
-    content: URL('https://raw.githubusercontent.com/szaccagni/images/main/next_arrow_hover.png');
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
-.travel_caption {
+.change {
+    cursor: pointer;
+}
+
+.change .bar1 {
+    transform: translate(0, 8px) rotate(-45deg);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    transform: translate(0, -8px) rotate(45deg);
+}
+
+/* deskstop header */
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-wrapper {
+    width: 100%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.header-desktop {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3rem;
+}
+
+.header-nav-left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 67%;
+    height: inherit;
+    align-items: center;
+}
+
+.header-nav {
+    width: 33%;
+    flex: 1 1 33%;
+}
+
+.header-nav-list {
+    display: inline-flex;
+}
+
+.header-nav-item {
+    display: block;
+    font-size: calc((1.2 - 1) * 1.2vw + 1rem);
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: 1.3vw;
+}
+
+.header-title {
+    width: 34%;
+    text-align: center;
+    flex: 1 1 34%;
+}
+
+.header-title, .header-mobile-title a {
+    font-size: calc((2 - 1) * 1.2vw + 1rem);
+    font-weight: 300;
+}
+
+.header-nav-list-right { 
+    width: 33%;
+    justify-content: flex-end;
+    display: inline-flex;
+    height: inherit;
+}
+
+.header-nav-list-right a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0 1.6rem;
+    font-size: calc((1 - 1) * 1.2vw + 1rem);
+    font-weight: 300;
+    color: var(--bg-color);
+}
+
+.header-nav-list-right a:hover {
+    background-color: #c6c3c3;
+} 
+
+/* content */
+
+.section_container {
+    margin: 0 15vw;
+}
+
+.section1 {
+    width: 100%;
+}
+
+.section1_content {
+    padding: 2.70rem 0;
+}
+
+.section1_content h1 {
+    text-align: justify;
+    font-weight: 350;
+    color: white;
+    font-size: calc((4 - 1) * 1.2vw + 1rem);
+}
+
+.section1_content a {
+    text-decoration: none;
+}
+
+.section2 {
+    width: 100%;
+}
+
+.section2 h3 {
     font-size: 1.5rem;
-    text-align: center;
-    padding-bottom: 1.5rem;
+    font-weight: 200;
+    color: white;
 }
 
-.art_entire {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+.section2_row {
+    display: flex;
 }
 
-.art_entire img{
-    width: 70%;
+.section2_header {
+    width: 45%;
 }
 
-.dev_container{
-    width: 80%;
-    margin: 3.125rem auto auto auto;
-}
-.dev_item {
-    background-color: rgba(192,192,192,.26);
-    width: 80%;
-    margin: 1rem auto auto auto;
-    padding: 1.875rem;
-    font-family: 'Rubik', sans-serif;
+.section2_header a {
+    color: white;
 }
 
-.resume {
-    height:auto;
-    margin: 3.125rem    auto auto auto;
-    text-align: center;
+.section2_content {
+    width: 55%;
 }
 
-@media only screen and (max-width: 1100px) {
-    .me {
-        display: block;
-        margin-top:3.125rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;  
-    }
-    #me_img {
-        display:none;
-    }
-    .me_img_small {
-        display: block;
-        text-align: center;
-        padding-top: 1.875rem;
-    }
-    .me_img_small img {
-        width: 40%;
-    }
-    .art_entire img {
-        width:90%;
-    }
-    .travel_img_entire {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .travel_img_entire img {
-        width: 90%;
-    }
+.section3 {
+    color:white;
 }
 
+.section3_content {
+    display:flex;
+    align-items: center;
+}
 
-@media only screen and (max-width: 630px) {
+.section3_content h1 {
+    font-weight: 350;
+}
+
+.line {
+    flex: 1;
+    height: 2px;  
+    background-color: white;
+    margin-left: 1rem;
+}
+
+.section3:not(:first-child) {
+    padding-top: 2.70rem;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 800px) {
     
-    html {
-        font-size:12px
-    }
-
-    body {
-        padding:0;
-    }
-    .linkbar .mynav:hover {
-        background-image: none;
-    }
-    .me {
-        margin:1.5rem;
-        width:100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .me_img_small img {
-        width: 55%;
-    }
-    .aboutme {
-        padding-left:0;
-        padding-right:0;
-        margin:0 3rem;
-        font-size:larger;
-    }
-    .carousel-prev {
-        width: 3rem;
-    }
-    .carousel-next {
-        width: 3rem;
-    }
-    .carousel-next:hover {
-        content: URL('https://github.com/szaccagni/images/blob/main/next_arrow.png?raw=true');  
-    }
-    .carousel-prev:hover {
-        content: URL('https://raw.githubusercontent.com/szaccagni/images/main/previous_arrow.png');
-    }
-    .desktop {
+    .header-desktop {
         display: none;
     }
-    .mobile {
+
+    .header-mobile {
+        display:block;
+    }
+
+    .header-wrapper {
+        padding: 5vw 6vw;
+    }
+
+    .section_container {
+        margin: 0 6vw;
+    }
+
+    .section1_content {
+        padding: 2.5vw 0;
+    }
+
+    .section2_row {
         display: block;
     }
-}
 
-@media only screen and (max-width: 360px) {
-    html {
-        font-size: 6px;
-    }
-    .travel_img_entire {
-        margin-right:0px;
-        margin-left:0px;
-        width:100%;
-    }
-}
-
-@media only screen and (max-width: 200px) {
-    .title {
-        font-size: 3rem;
-    }
-    
-    .linkbar {
-        font-size: 1.3rem;
+    .section2_header, .section2_content {
+        width: 100%;
     }
 
-    .aboutme {
-        font-size:1rem;
+    .section2.home:not(:first-child) {
+        padding-top: 2.5vw;
+    }
+
+    .section2.exp:not(:first-child) {
+        padding-top: 1.25vw;
     }
 }
 
-@media only screen and (max-width: 200px) {
-    html {
-        font-size: 6px;
-    }
-}
